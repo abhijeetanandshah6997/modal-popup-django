@@ -1,0 +1,33 @@
+{% extends 'popupapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-md-3 col-left d-flex align-items-center flex-column">
+
+            <div class="text-col-left text-center">
+                Home
+            </div>
+
+            <div class="d-flex">
+                <div class="widget-marker"></div>
+                <div class="widget-marker" style="background-color: #9fffab;"></div>
+                <div class="widget-marker"></div>
+            </div>
+
+        </div>
+        <div class="col col-md-9 align-self-center">
+            <div class="col-form">
+                <div class="socion-image">
+                    <img class="logo" src="{% static 'assets/logo.png' %}" alt="Socion"/>
+                </div>
+                <div class="socion-image">
+                    <button class="button-style" onclick="location.href='{% url 'book_list' %}'"><span class="button-text">BOOKS</span></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
